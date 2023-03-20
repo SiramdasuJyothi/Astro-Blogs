@@ -47,7 +47,7 @@ function invisiblepass()
     var fom = document.forms
     fom[0].elements[1].type="password"
     var img = document.images
-    img[0].src="../ASSET/image/closeMonkey.png"
+    img[0].src="./ASSET/images/closeMonkey.png"
     document.getElementById("visible").style.transform="rotateY(-360deg)"
     document.getElementById("visible").style.transition="transform 1s"
 }

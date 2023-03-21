@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbarInfo.css">
+    <script src="./Satellites.js" defer></script>
+    <link rel="stylesheet" href="./Satellites.css">
+</head>
+<body>
+    <div id = "header">
+        <h1 id="heading">Gallery Of Satellites</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="./AstroBlog_Project.html"><li class="mli">Home</li></a>
+            <a href="./Information.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Object
+                <ul id="sublist">
+                    <a href="./Planets.html"><li class="sli">planets</li></a>
+                    <a href="./Stars.html"><li class="sli">Stars</li></a>
+                    <a href="./Blackhole.html"><li class="sli">blackhole</li></a>
+                    <a href="./Astroids.html"><li class="sli">Astroids</li></a>
+            </ul>
+            </li>
+            <a href="./LogOut.html"><li class="mli">LogOut</li></a>
+        </ul>
+    </div>
+    <div id="garllaryImages">
+        <img class="a" onclick="openImag(1,'Communications','A communications satellite is an artificial satellite that relays and amplifies radio telecommunication signals via a transponder; it creates a communication channel between a source transmitter and a receiver at different locations on Earth. Communications satellites are used for television, telephone, radio, internet, and military applications.')">
+        <img class="a" onclick="openImag(2,'Space launch','space is the earliest part of a flight that reaches space. Space launch involves liftoff, when a rocket or other space launch vehicle leaves the ground, floating ship or midair aircraft at the start of a flight. Liftoff is of two main types: rocket launch , and non-rocket spacelaunch.')">
+        <img class="a" onclick="openImag(3,'NOAA-15','NOAA-15, also known as NOAA-K before launch, is an operational, polar-orbiting of the NASA-provided Television Infrared Observation Satellite series of weather forecasting satellite operated by National Oceanic and Atmospheric Administration. NOAA-15 was the latest in the Advanced TIROS-N series. It provided support to environmental monitoring by complementing the NOAA/NESS Geostationary Operational Environmental Satellite program.')">
+        <img class="a" onclick="openImag(4,'Ohsumi','Ohsumi was the first Japanese satellite put into orbit. It was launched on February 11, 1970 at 04:25 UTC with a Lambda 4S-5 rocket from Uchinoura Space Center by Institute of Space and Aeronautical Science, University of Tokyo, now part of the Japan Aerospace Exploration Agency. Japan became the fourth nation after the USSR, United States and France to release an artificial satellite into successful orbit on its own. The satellite was named after the Ōsumi Peninsula in Kagoshima Prefecture, Japan, where the launch site was located.')">
+        <img class="a" onclick="openImag(5,'Skylab','Skylab was the first United States space station, launched by NASA,occupied for about 24 weeks between May 1973 and February 1974. It was operated by three separate three-astronaut crews: Skylab 2, Skylab 3, and Skylab 4. Major operations included an orbital workshop, a solar observatory, Earth observation, and hundreds of experiments.')">
+    </div>
+    <div id="subWindow" style="display: none;">
+         <h1 id="close" onclick="closeImag()">X</h1>
+         <img id="subWindowImg" src="./ASSET/images/Satellites/1.jpg">
+         <h1 id="imageHeading">Heading</h1>
+         <p id="imagpera">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, veniam?</p>
+    </div>
+</body>
+</html>

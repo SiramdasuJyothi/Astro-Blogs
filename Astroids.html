@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbarInfo.css">
+    <script src="./Astroids.js" defer></script>
+    <link rel="stylesheet" href="./Astroids.css">
+</head>
+<body>
+    <div id = "header">
+        <h1 id="heading">Gallery Of Astroids</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="./AstroBlog_Project.html"><li class="mli">Home</li></a>
+            <a href="./Information.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Object
+                <ul id="sublist">
+                    <a href="./Planets.html"><li class="sli">planets</li></a>
+                    <a href="./Stars.html"><li class="sli">Stars</li></a>
+                    <a href="./Blackhole.html"><li class="sli">blackhole</li></a>
+                    <a href="./Satellites.html"><li class="sli">satellites</li></a>
+            </ul>
+            </li>
+            <a href="./LogOut.html"><li class="mli">LogOut</li></a>
+        </ul>
+    </div>
+    <div id="garllaryImages">
+        <img class="a" onclick="openImag(1,'Ceres','The geology of Ceres consists of the characteristics of the surface, the crust and the interior of the dwarf planet Ceres. The surface of Ceres is comparable to the surfaces of Saturn s moons Rhea and Tethys, and Uranus s moons Umbriel and Oberon.')">
+        <img class="a" onclick="openImag(2,'Vesta','vesta is one of the largest objects in the asteroid belt, with a mean diameter of 525 kilometres (326 mi).It was discovered by the German astronomer Heinrich Wilhelm Matthias Olbers on 29 March 1807 and is named after Vesta, the virgin goddess of home and hearth from Roman mythology.')">
+        <img class="a" onclick="openImag(3,'Pallas','Pallas is the second asteroid to have been discovered, after Ceres. It is believed to have a mineral composition similar to carbonaceous chondrite meteorites, like Ceres, though significantly less hydrated than Ceres. It is the third-largest asteroid in the Solar System by both volume and mass, and is a likely remnant protoplanet. ')">
+        <img class="a" onclick="openImag(4,'Hygiea','Hygiea is a major asteroid and possible dwarf planet located in the main asteroid belt. With a diameter of 434 kilometres (270 mi) and a mass estimated to be 3% of the total mass of the belt,it is the fourth-largest asteroid in the Solar System by both volume and mass.')">
+        <img class="a" onclick="openImag(5,'Dactyl','Dactyl orbits Ida with a period of 1.54 days at an average distance of 108 km, with an inclination of 9° to Ida s equator.')">       
+    </div>
+    <div id="subWindow" style="display: none;">
+         <h1 id="close" onclick="closeImag()">X</h1>
+         <img id="subWindowImg" src="./ASSET/images/Astroids/1.jpg">
+         <h1 id="imageHeading">Heading</h1>
+         <p id="imagpera">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, veniam?</p>
+    </div>
+</body>
+</html>

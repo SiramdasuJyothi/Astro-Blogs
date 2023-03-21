@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbarInfo.css">
+    <script src="./Stars.js" defer></script>
+    <link rel="stylesheet" href="./Stars.css">
+</head>
+<body>
+    <div id = "header">
+        <h1 id="heading">Gallery Of Stars</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="./AstroBlog_Project.html"><li class="mli">Home</li></a>
+            <a href="./Information.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Object
+                <ul id="sublist">
+                <a href="./Planets.html"><li class="sli">planets</li></a>
+                <a href="./Blackhole.html"><li class="sli">blackhole</li></a>
+                <a href="./Satellites.html"><li class="sli">satellites</li></a>
+                <a href="./Astroids.html"><li class="sli">Astroids</li></a>
+            </ul>
+            </li>
+            <a href="./LogOut.html"><li class="mli">LogOut</li></a>
+        </ul>
+    </div>
+    <div id="garllaryImages">
+         <img class="a" onclick="openImag(1,'Blue Star','The galaxy ESO 137-001, 200 million light-years away, leaves  trails (shown in blue in this false-color Hubble Space Telescope image) of gas and newly born stars as it plows through the Norma Cluster. Bright stars in the foreground sit within our galaxy.')">
+         <img class="a" onclick="openImag(2,'Neutron','Neutron star—located 50,000 light-years from Earth—that flared up so brightly in December 2004 that it temporarily blinded all the x-ray satellites in space and lit up the Earths upper atmosphere. The flare-up occurred when the stars massive, twisting magnetic field ripped open its crust, releasing an explosion of gamma rays.')">
+         <img class="a" onclick="openImag(3,'Oxygen','Oxygen is the third most abundant element in the universe, after hydrogen and helium. It is an important constituent of the clouds of gas and dust in space, especially when combined in molecules with other atoms like carbon, and it is from this interstellar material that new stars and planets develop.')">
+         <img class="a" onclick="openImag(4,'Coalsack Nebula','The most prominent dark nebula in the skies is the Coalsack Nebula. It is located in the constellation of Crux in the southern hemisphere. The Coalsack is definitely visible to the eye as a dark patch obscuring a quick section of Milky Way stars as they cross their southernmost region of the sky.')">
+    </div>
+    <div id="subWindow" style="display: none;">
+         <h1 id="close" onclick="closeImag()">X</h1>
+         <img id="subWindowImg" src="./ASSET/images/Stars/1.jpg">
+         <h1 id="imageHeading">Heading</h1>
+         <p id="imagpera">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, veniam?</p>
+    </div>
+</body>
+</html>
